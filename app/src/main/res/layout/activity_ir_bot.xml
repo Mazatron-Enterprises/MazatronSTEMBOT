@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IrBotActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_bot"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_blue_light"
+        />
+
+
+    <EditText
+        android:background="@drawable/edittextdesign"
+        android:id="@+id/rpmView"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter RPM"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="3"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/buttonsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/buttonrunstyle"
+        android:text="RUN/SEND"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:elevation="15dp"
+        android:translationZ="12dp"
+        android:drawableLeft="@android:drawable/ic_menu_send"
+        />
+
+    <TextView
+        android:id="@+id/foottext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Control with the IR remote\n  provided with MAZ-KIT"
+        android:textColor="@android:color/holo_blue_light"
+        />
+
+</RelativeLayout>

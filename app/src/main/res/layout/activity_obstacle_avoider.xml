@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ObstacleAvoiderActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/obstacle_avoider"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_blue_light"
+        />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/dropdownbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:spinnerMode="dropdown"
+        android:background="@android:drawable/btn_dropdown"
+        android:popupTheme="@android:color/holo_blue_light"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearlayoutline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:background="@drawable/edittextdesign"
+            android:id="@+id/rpmView"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:hint="Enter RPM"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="3"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_margin="25dp"
+            android:textSize="20sp"
+            android:padding="9dp"
+            android:textStyle="bold"
+            />
+
+
+        <EditText
+            android:background="@drawable/edittextdesign"
+            android:id="@+id/delayView"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:hint="Enter Distance"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="3"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_margin="25dp"
+            android:textSize="20sp"
+            android:padding="9dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/buttonrunstyle"
+        android:text="RUN/SEND"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:elevation="15dp"
+        android:translationZ="12dp"
+        android:drawableLeft="@android:drawable/ic_menu_send"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp"
+        android:id="@+id/distance"
+        android:background="@drawable/edittextdesign"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        />
+
+
+
+</RelativeLayout>

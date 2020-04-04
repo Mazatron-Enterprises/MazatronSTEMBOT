@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mazatron STEM BOT</string>
+    <string name="app_name_head">MAZATRON STEM BOT</string>
+    <string name="line_follower">Line Follower</string>
+    <string name="obstacle_avoider">Obstacle Avoider</string>
+    <string name="wall_hugging">Wall Hugging</string>
+    <string name="maze_solver">Maze Solver</string>
+    <string name="ir_bot">IR BOT</string>
+    <string name="blue_bot">BLE-BOT</string>
+    <string name="connect_bt"> CONNECT -> STEM BOT </string>
+</resources>
